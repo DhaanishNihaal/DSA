@@ -18,7 +18,7 @@ class Solution {
                 }
                 else{
                     arr.add(cur.val);
-                    prev.right=null;
+                    prev.right=null;//not compulsory just to restore the tree
                     cur=cur.right;
                 }
             }
