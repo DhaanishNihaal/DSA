@@ -28,6 +28,7 @@ class Solution {
         return -1;
     }
 }
+//simple and best
 class Solution {
     public int findCheapestPrice(int n, int[][] flights, int src, int dst, int k) {
         ArrayList<ArrayList<int []>> adj=new ArrayList<>();
