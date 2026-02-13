@@ -6,6 +6,7 @@ public class ReplaceElementsWithRanks{
         PriorityQueue<int[]>pq = new PriorityQueue<>((a,b)->a[0]-b[0]);
         for(int i=0;i<arr.length;i++)
             pq.add(new int []{arr[i],i});
+        int[] ans=new int[arr.length];
         int last = -1;
         int rank = 0;
         while(!pq.isEmpty())
@@ -18,10 +19,10 @@ public class ReplaceElementsWithRanks{
                 rank++;
                 last = cur;
             }
-            arr[ind] = rank;
+            ans[ind] = rank;
   
         } 
-        return arr;
+        return ans;
         
         
     }
