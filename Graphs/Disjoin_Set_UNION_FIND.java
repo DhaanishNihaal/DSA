@@ -30,4 +30,4 @@ class Solution {
         // add your code here
         return find_par(par,a)==find_par(par,b);
     }
-}
+}  
